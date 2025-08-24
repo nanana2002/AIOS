@@ -1,23 +1,22 @@
 [tool.poetry]
-name = "serper-search"
+name = "llm-mcp-client"
 version = "0.1.1"
 authors = [
-    "ZongHuan Wu ",
     "Cheng Chen",
 ]
-description = "A simple serper-search template"
+description = "send email to your email address"
 license = "MIT License"
 homepage = "https://github.com/moxin-org/mofa"
-documentation = "https://github.com/moxin-org/mofa/blob/main/README.md"
 readme = "README.md"
-packages = [{ include = "serper_search" }]
+packages = [{ include = "llm_mcp_client" }]
 
 [tool.poetry.dependencies]
 pyarrow = ">= 5.0.0"
 python-dotenv = "*"
+fastmcp = "*"
 
 [tool.poetry.scripts]
-serper-search = "serper_search.main:main"
+llm-mcp-client = "llm_mcp_client.main:main"
 
 [build-system]
 requires = ["poetry-core>=1.8.0"]

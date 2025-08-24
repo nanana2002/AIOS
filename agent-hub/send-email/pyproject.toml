@@ -12,6 +12,7 @@ packages = [{ include = "send_email" }]
 
 [tool.poetry.dependencies]
 pyarrow = ">= 5.0.0"
+python-dotenv = "*"
 
 [tool.poetry.scripts]
 send-email = "send_email.main:main"

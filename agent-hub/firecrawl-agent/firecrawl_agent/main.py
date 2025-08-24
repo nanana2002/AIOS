@@ -2,7 +2,7 @@ import json
 import os
 
 from dotenv import load_dotenv
-from firecrawl.firecrawl import FirecrawlApp
+from firecrawl import FirecrawlApp
 
 from mofa.agent_build.base.base_agent import MofaAgent, run_agent
 
@@ -48,7 +48,7 @@ Professional Experience: The speakerâ€™s work history, including companies theyâ
 
 @run_agent
 def run(agent:MofaAgent):
-    load_dotenv('.env.secret')
+    load_dotenv('.env')
     query = agent.receive_parameter('query')
     app = FireCrawl()
     scrape_result = json.dumps(app.deep_research(query=query))
