@@ -264,10 +264,7 @@ def main():
         return
 
     # 测试单次查询
-    test_queries = [
-        "当前Ai Agent有哪些知名的开源框架"
-    ]
-
+    test_queries = ["""I want to create an agent to query the meaning of a certain word def define_word(word): response = requests.get(f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}") if response.ok: definition = response.json()[0]["meanings"][0]["definitions"][0]["definition"] return f"{word}: {definition}" return "未找到释义" print(define_word("serendipity"))"""    ]
     for query in test_queries:
         print(f"\n{'=' * 50}")
         result = run_chat(query, planner_llm, model_name)

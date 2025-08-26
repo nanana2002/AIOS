@@ -15,7 +15,7 @@ packages = [{ include = "deep_search" }]
 pyarrow = ">= 5.0.0"
 python-dotenv = "*"
 openai = "*"
-
+playwright='*'
 [tool.poetry.scripts]
 deep-search = "deep_search.main:main"
 
