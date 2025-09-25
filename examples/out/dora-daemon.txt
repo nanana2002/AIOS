@@ -1,0 +1,9 @@
+2025-09-25T10:06:58.248864Z  INFO dora_daemon::coordinator: Connected to dora-coordinator at 127.0.0.1:53290
+2025-09-25T10:06:58.252487Z  INFO zenoh::net::runtime: Using ZID: aa81223b357f84abc4686cfee212147e
+2025-09-25T10:06:58.259727Z  INFO zenoh::net::runtime::orchestrator: Zenoh can be reached at: tcp/[fe80::215:5dff:fe5c:2986]:5456
+2025-09-25T10:06:58.259804Z  INFO zenoh::net::runtime::orchestrator: Zenoh can be reached at: tcp/10.255.255.254:5456
+2025-09-25T10:06:58.259807Z  INFO zenoh::net::runtime::orchestrator: Zenoh can be reached at: tcp/172.28.125.175:5456
+2025-09-25T10:06:58.260583Z  INFO zenoh::net::runtime::orchestrator: zenohd listening scout messages on 224.0.0.224:7446
+2025-09-25T10:11:19.227349Z  INFO run_inner{self.daemon_id=DaemonId { machine_id: None, uuid: 887c0bc6-29bd-4e28-bcf5-6ed10b789d82 }}: dora_daemon: received destroy command -> exiting
+2025-09-25T10:11:19.231031Z  INFO run_inner{self.daemon_id=DaemonId { machine_id: None, uuid: 887c0bc6-29bd-4e28-bcf5-6ed10b789d82 }}: zenoh::api::session: close session zid=aa81223b357f84abc4686cfee212147e
+2025-09-25T10:11:19.239945Z  WARN dora_daemon: process 110715 was killed on drop because it was still running

@@ -49,7 +49,8 @@ def parse_rss(rss_url):
             "title": entry.get("title", ""),
             "summary": entry.get("description", ""),
             "url": extract_real_url(entry.get("link", "")),
-            "time": entry.published
+            # 比之前 "time": entry.get ('published') 更加健壮，http://www.xinhuanet.com/politics/news_politics.xml并没有给出时间
+            "time": entry.get('published') or entry.get('pubDate') or "未知时间"
         }
 
         news_list.append(news_item)

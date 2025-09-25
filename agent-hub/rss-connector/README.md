@@ -184,29 +184,22 @@ def main():
 - **Market Research**: Gather market intelligence from news sources
 
 ## Supported RSS Sources
-
-### Chinese News Sources
 ```bash
-# Sina News
-http://rss.sina.com.cn/news.xml
-
-# People's Daily
-http://www.people.com.cn/rss/politics.xml
-
-# Xinhua News
-http://www.xinhuanet.com/politics/news_politics.xml
+# "Google News"
+  url: "https://news.google.com/rss"
+# "BBC News"
+  url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+# "纽约时报"
+  url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+# "36氪"
+  url: "https://36kr.com/feed"
+# "少数派"
+  url: "https://sspai.com/feed"
+# "InfoQ"
+  url: "https://www.infoq.cn/feed"
+# "Hacker News"
+  url: "https://news.ycombinator.com/rss"
 ```
-
-### International Sources
-```bash
-# BBC News
-http://feeds.bbci.co.uk/news/rss.xml
-
-# CNN
-http://rss.cnn.com/rss/edition.rss
-
-# Reuters
-http://feeds.reuters.com/reuters/topNews
 ```
 
 ## Output Format
